@@ -44,6 +44,8 @@ body
 	line-height: 1.65
 	font-family: $default-font
 	overflow-x: hidden
+	background: url("../img/bg.jpg") no-repeat
+	background-attachment: fixed
 
 .img-responsive
 	display: block
@@ -57,4 +59,163 @@ body
 	background-color: $accent
 	color: #fff
 
+#menu-bar
+  width: 100%
+  margin: 0px 0px 0px 0px
+  padding: 6px 6px 4px 6px
+  height: 40px
+  line-height: 100%
+  border-radius: 0px
+  -webkit-border-radius: 0px
+  -moz-border-radius: 0px
+  box-shadow: 0px 0px 0px #666666
+  -webkit-box-shadow: 0px 0px 0px #666666
+  -moz-box-shadow: 0px 0px 0px #666666
+  background: #504D4A
+  position: relative
+  z-index: 999
+  li
+    margin: 0px 0px 6px 0px
+    padding: 0px 6px 0px 6px
+    float: left
+    position: relative
+    list-style: none
+  a
+    font-weight: bold
+    font-family: arial
+    font-style: normal
+    font-size: 12px
+    color: #FFB826
+    text-decoration: none
+    display: block
+    padding: 6px 20px 6px 20px
+    margin: 0
+    margin-bottom: 6px
+    border-radius: 0px
+    -webkit-border-radius: 0px
+    -moz-border-radius: 0px
+    text-shadow: 0px 0px 3px #000000
+  li ul li a
+    margin: 0
+  .active a, li:hover > a
+    background: #FFB826
+    color: #444444
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2)
+    -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2)
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2)
+    text-shadow: 0px 0px 0px #FFFFFF
+  ul li:hover a, li:hover li a
+    background: none
+    border: none
+    color: #666
+    -box-shadow: none
+    -webkit-box-shadow: none
+    -moz-box-shadow: none
+  ul a:hover
+    background: #FFB826 !important
+    color: #FFFFFF !important
+    border-radius: 0
+    -webkit-border-radius: 0
+    -moz-border-radius: 0
+    text-shadow: 0px 0px 0px #FFFFFF
+  li:hover > ul
+    display: block
+  ul
+    background: #FFB826
+    display: none
+    margin: 0
+    padding: 0
+    width: 185px
+    position: absolute
+    top: 30px
+    left: 0
+    border: solid 0px #B4B4B4
+    border-radius: 0px
+    -webkit-border-radius: 0px
+    -moz-border-radius: 0px
+    -webkit-box-shadow: 0px 0px 0px #222222
+    -moz-box-shadow: 0px 0px 0px #222222
+    box-shadow: 0px 0px 0px #222222
+    li
+      float: none
+      margin: 0
+      padding: 0
+    a
+      padding: 10px 0px 10px 15px
+      color: #424242 !important
+      font-size: 12px
+      font-style: normal
+      font-family: arial
+      font-weight: normal
+      text-shadow: 0px 0px 0px #FFFFFF
+    li
+      &:first-child > a
+        border-top-left-radius: 0px
+        -webkit-border-top-left-radius: 0px
+        -moz-border-radius-topleft: 0px
+        border-top-right-radius: 0px
+        -webkit-border-top-right-radius: 0px
+        -moz-border-radius-topright: 0px
+      &:last-child > a
+        border-bottom-left-radius: 0px
+        -webkit-border-bottom-left-radius: 0px
+        -moz-border-radius-bottomleft: 0px
+        border-bottom-right-radius: 0px
+        -webkit-border-bottom-right-radius: 0px
+        -moz-border-radius-bottomright: 0px
+  &:after
+    content: "."
+    display: block
+    clear: both
+    visibility: hidden
+    line-height: 0
+    height: 0
+  display: inline-block
+
+html[xmlns] #menu-bar
+  display: block
+
+* html #menu-bar
+  height: 1%	
+
+.logo
+	img
+		margin: 0 auto
+		height: 150px
+		width: 150px
+	font-size: 25px
+	color: #ffb826
+.toptext
+	display: block
+	margin-top: 69px
+	text-align: center
+.topline
+	display: block
+	float: right
+	margin-top: 10px
+	margin-right: 15px
+	.phone
+		display: block
+		color: white
+.content
+	padding: 15px
+	border: 1px #666 solid
+	color: #c1c1c1
+	text-align: justify
+	img
+		min-width: 300px
+		height: auto
+		margin: 7px
+.black
+	background-color: rgba(25, 25, 23, 0.46)
+.logotxt
+	text-align: center
+	color: #ffb826
+	font-size: 50px
+.footer
+	.footxt
+		text-align: center
+		color: #666
+		margin-top: 10px
+		margin-bottom: 10px
 @import "media" // Всегда в конце
