@@ -39,10 +39,20 @@
 					<div class="topline">
 						<div class="phone">8 (926) 181 01 94</div>
 						<div class="phone">8 (902) 391 88 22</div>
-						<a href="#">Перезвоните мне</a>
+						<a data-fancybox data-src="#modal" href="javascript:;"">Перезвоните мне</a>
 					</div>
 				</div>
 				
+				<!-- popup-main-callback -->
+				<div style="display: none;" id="modal" class="popup-main formstyle">
+					<form class="popup-main" action="send.php" method="post" name="form1">
+						<h2>Обратный звонок</h2>
+						<input type="text" name="name" id="" placeholder="Ваше имя">
+						<input type="text" name="phone" id="" placeholder="Ваш телефон">
+						<input data-fancybox-close class="but1" type="submit" value="Отправить">
+					</form>
+				</div>
+
 			</div>
 			<div class="logo">
 				<div class="row">

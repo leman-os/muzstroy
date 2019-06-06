@@ -39,6 +39,7 @@ gulp.task('common-js', function() {
 gulp.task('js', ['common-js'], function() {
 	return gulp.src([
 		'app/libs/jquery/dist/jquery.min.js',
+		'app/libs/fancybox/dist/jquery.fancybox.min.js',
 		'app/js/common.min.js', // Всегда в конце
 		])
 	.pipe(concat('scripts.min.js'))
@@ -93,9 +94,9 @@ gulp.task('build', ['removedist', 'imagemin', 'sass', 'js'], function() {
 gulp.task('deploy', function() {
 
 	var conn = ftp.create({
-		host:      'hostname.com',
-		user:      'username',
-		password:  'userpassword',
+		host:      'msgmsg.beget.tech',
+		user:      'msgmsg_admin',
+		password:  'Qwe123we',
 		parallel:  10,
 		log: gutil.log
 	});
@@ -105,7 +106,7 @@ gulp.task('deploy', function() {
 	'dist/.htaccess',
 	];
 	return gulp.src(globs, {buffer: false})
-	.pipe(conn.dest('/path/to/folder/on/server'));
+	.pipe(conn.dest('/msgmsg.beget.tech/public_html/'));
 
 });
 
